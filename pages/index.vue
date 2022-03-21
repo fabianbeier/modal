@@ -7,7 +7,7 @@
       <li><Card/></li>
       <li><Card/></li>
       <li><Card/></li>
-      <li><Card data-flip-id="card"/></li>
+      <li><Card data-flip-id="card" img="img"/></li>
       <li><Card/></li>
       <li><Card/></li>
     </ul>

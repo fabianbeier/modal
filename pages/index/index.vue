@@ -4,6 +4,10 @@
 
 <script>
 export default {
+    transition: {
+    name: "wurst",
+    mode: "out-in"
+    }
 }
 </script>
 

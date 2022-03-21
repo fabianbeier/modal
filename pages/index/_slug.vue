@@ -2,7 +2,7 @@
   <div>
     <div >
       </div>
-      <div class="h-screen w-screen fixed top-0 left-0 flex justify-center bg-slate-600 transition-all duration-150 layer bg-opacity-90">
+      <div class="h-screen w-screen fixed top-0 left-0 flex justify-center bg-slate-900 transition-all duration-150 layer bg-opacity-90">
         <div
           class="w-full bg-gray-200 rounded-xl overflow-scroll m-12 card"
           :data-flip-id="`card-` + post.id"
@@ -11,7 +11,7 @@
             <img
               :src="post.image"
               alt
-              class="w-full h-screen object-cover img"
+              class="w-full h-2/3 object-cover img"
               :data-flip-id="`img-` + post.id"
             />
             <div class="p-8">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <div >
       </div>
       <div class="h-screen w-screen fixed top-0 left-0 flex justify-center bg-slate-900 transition-all duration-150 layer bg-opacity-90">
@@ -74,19 +74,7 @@ export default {
       });
     },
   },
-  // methods: {
-  //   flipIt() {
-  //      console.log('hurz')
-  //     this.$nextTick(() => {
-  //       const state = this.$Flip.getState(".card, .img");
-  //       console.log(state)
-  //       this.$Flip.from(state, {
-  //         duration: 0.5,
-  //         ease: "power3.inOut",
-  //       });
-  //     });
-  //   }
-  // },
+
   mounted() {},
 };
 </script>

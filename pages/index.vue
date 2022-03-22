@@ -1,7 +1,7 @@
 <template>
-  <div class="m-12">
+  <div class="m-12" >
     <ul class="grid grid-cols-3 gap-8">
-      <li v-for="post in posts" :key="post.id"><Card :content="post"/></li>
+      <li v-for="post in posts" :key="post.id"><Card :content="post" /></li>
     </ul>
     <nuxt-child />
   </div>
@@ -10,17 +10,22 @@
 <script>
 import Card from "~/components/Card.vue";
 export default {
-    data() {
-      return {
-        posts: []
-      }
+  data() {
+    return {
+      posts: [],
+    };
+  },
+  async fetch() {
+    this.posts = await fetch("https://api.nuxtjs.dev/posts").then((res) =>
+      res.json()
+    );
+  },
+  name: "IndexPage",
+  components: { Card },
+  methods: {
+    pathTest() {
+      // history.pushState({}, '', "asdh")
     },
-    async fetch() {
-      this.posts = await fetch(
-        'https://api.nuxtjs.dev/posts'
-      ).then(res => res.json())
-    },
-    name: "IndexPage",
-    components: { Card }
-}
+  },
+};
 </script>

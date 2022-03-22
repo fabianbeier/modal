@@ -22,6 +22,19 @@ export default {
   },
   name: "IndexPage",
   components: { Card },
+  transition: {
+    name: 'startpage',
+    mode: "out-in",
+    appear: true,
+    enter(el, done) {
+      this.$gsap.from('.card', {
+        y: 100,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.05
+      })
+    }
+  },
   methods: {
     pathTest() {
       // history.pushState({}, '', "asdh")
